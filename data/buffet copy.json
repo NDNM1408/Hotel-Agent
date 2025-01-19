@@ -1,0 +1,108 @@
+[
+    {
+        "name": "Buffet 1A",
+        "price": 35,
+        "salads": [
+            "Leafy salad, blue cheese, pear, caramelized walnuts, raspberry, wine vinegar",
+            "Greek salad, fresh cheese, olives",
+            "Banquet pastries"
+        ],
+        "soups": [
+            "Chicken broth, noodles, root vegetables"
+        ],
+        "main": [
+            "Pork schnitzels",
+            "Chicken thigh roulade",
+            "Penne with sun-dried tomato sauce",
+            "Mashed potatoes",
+            "Steamed rice"
+        ],
+        "desserts": [
+            "Vanilla mousse with fruit",
+            "Sacher cake"
+        ]
+    },
+    {
+        "name": "Buffet 1B",
+        "price": 35,
+        "salads": [
+            "Coleslaw",
+            "Beetroot salad with yogurt and horseradish",
+            "Crudités with creamy herb dip",
+            "Banquet pastries"
+        ],
+        "soups": [
+            "Sweet potato cream soup"
+        ],
+        "main": [
+            "Roasted marinated chicken thighs with BBQ sauce, grilled vegetables, and yogurt-herb dip",
+            "Pork porchetta with roasted garlic kale",
+            "Spinach spaetzle with blue cheese sauce and sun-dried tomatoes",
+            "American potatoes",
+            "Steamed rice with peas",
+            "Pickled vegetables",
+            "Horseradish"
+        ],
+        "desserts": [
+            "Apple pie",
+            "Pavlova with blackcurrants"
+        ]
+    },
+    {
+        "name": "Buffet 2",
+        "price": 45,
+        "cold": [
+            "Roast beef, smoked aioli",
+            "Selection of local cheeses",
+            "Banquet pastries"
+        ],
+        "salads": [
+            "Leafy salad, roasted pumpkin, green beans, radish, Dijon, vinegar",
+            "Salad from green leaves"
+        ],
+        "soups": [
+            "Minestrone"
+        ],
+        "main": [
+            "Roasted pork tenderloin with sautéed mushrooms",
+            "Chicken schnitzels",
+            "Penne A la Arabiatta",
+            "Salmon with dill sauce",
+            "Grilled vegetables",
+            "Baby potatoes with butter",
+            "Steamed rice"
+        ],
+        "desserts": [
+            "Panna cotta with fruit",
+            "Mix strudel"
+        ]
+    },
+    {
+        "name": "Buffet 3",
+        "price": 55
+    },
+    {
+        "name":"Buffet 4",
+        "price": 65
+    },
+    {
+        "name": "Slovakia Buffet",
+        "price": 35
+    },
+    {
+        "name": "Taliansky Buffet",
+        "price": 45
+    },
+    {
+        "name": "France Buffet",
+        "price": 45
+    },
+    {
+        "name": "Asian Buffet",
+        "price": 45
+    },
+    {
+        "name": "Chef's special buffet",
+        "price": 65
+    }
+]

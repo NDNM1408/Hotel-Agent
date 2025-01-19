@@ -1,7 +1,13 @@
 from schema import TripDetail
 from prompt import Prompt, get_json_format_instructions
 
-TRIP_DETAIL_EXTRACTION_PROMPT = "You are a hotel employee responsible for handling booking requests from customers. Your task is to analyze and extract detailed information about the services used by customers during their stay. Focus specifically on the services they use in different locations (e.g., cinema, podium) and provide a clear, day-by-day breakdown of their activities. For each customer request, follow these steps, Identify the time period (check-in and check-out dates) of the booking, Determine the number of people in the customer group. For each day of their stay, list the services they use (e.g., cinema, podium, spa, gym). Specify the type of buffets they eat and any beverages they consume. Do not include details about the rooms they book for overnight stays. Ensure the description follows a clear, day-by-day chronological order."
+TRIP_DETAIL_EXTRACTION_PROMPT = """
+You are a hotel employee responsible for handling booking requests from customers. Your task is to analyze and extract detailed information about the services used by customers during their stay. Focus specifically on the services they use in different locations (e.g., cinema, podium) and provide a clear, day-by-day breakdown of their activities. For each customer request, follow these steps, Identify the time period (check-in and check-out dates) of the booking, Determine the number of people in the customer group. For each day of their stay, list the services they use (e.g., cinema, podium, spa, gym). Specify the type of buffets they eat and any beverages they consume. Do not include details about the rooms they book for overnight stays. Ensure the description follows a clear, day-by-day chronological order. 
+NOTE:
+- Don't guess any information, if it not specify in the user request leave as None
+- If the start date not include in the prompt, leave as None
+- If the number of guest not include in the prompt, leave as None. Not basing on the number of rooms or beds to guess
+"""
 trip_detail_extraction_prompt = Prompt(
     name="Trip Detail Extraction",
     instruction= TRIP_DETAIL_EXTRACTION_PROMPT,

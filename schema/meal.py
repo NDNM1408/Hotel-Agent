@@ -8,15 +8,17 @@ class MealType(str, Enum):
     COFFEE_BREAK = "Coffee Break"
     WINERY = "Winery"
     NORMAL = "Normal"
+    
+
 
 class MealDetail(BaseModel):
     meal_time: t.Optional[time] = Field(
         None,
-        description="The time participants want to use the buffet (hour and minute only). If not specified, leave as null."
+        description="The time participants want to use the meal (hour and minute only). If not specified, leave as null."
     )
-    meal_description: str = Field(
+    meal_name: t.Optional[str] = Field(
         ...,
-        description="The description of the buffet based on the customer request."
+        description="The name of the meal in the menu. If the type meal is Breakfast or Winery or the name is not specify, leave as null."
     )
     meal_type: MealType = Field(
         ...,

@@ -2,13 +2,13 @@ from pydantic import BaseModel, Field
 import typing as t
 from enum import Enum
 
-class DiscountType(Enum):
+class DiscountType(str, Enum):
     CHILD_UNDER_6 = "children under 6 years of age"
     CHILD_6_TO_12 = "children from 6 to 12 years of age"
     TRAVEL_COMPANY = "organized through a travel company"
     STAFF_RELATIVE = "relatives of hotel staff members"
 
-class RoomType(Enum):
+class RoomType(str, Enum):
     SINGLE = "Single"
     TWIN = "Twin"
     APARTMENT = "Apartment"
