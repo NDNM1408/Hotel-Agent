@@ -1,0 +1,56 @@
+{
+    "single": {
+        "summer": {
+            "normal_day": 35,
+            "weekend": 45
+        },
+        "winter":{
+            "normal_day": 45,
+            "weekend": 55
+        },
+        "special": {
+            "normal_day": 55,
+            "weekend": 55 
+        },
+        "spring": {
+            "normal_day": 55,
+            "weekend": 55
+        }
+    },
+    "twin": {
+        "summer": {
+            "normal_day": 55,
+            "weekend": 65
+        },
+        "winter":{
+            "normal_day": 65,
+            "weekend": 75
+        },
+        "special": {
+            "normal_day": 75,
+            "weekend": 85 
+        },
+        "spring": {
+            "normal_day": 75,
+            "weekend": 85
+        }        
+    },
+    "apartment": {
+        "summer": {
+            "normal_day": 99,
+            "weekend": 99
+        },
+        "winter":{
+            "normal_day": 99,
+            "weekend": 99
+        },
+        "special": {
+            "normal_day": 199,
+            "weekend": 199 
+        },
+        "spring": {
+            "normal_day": 159,
+            "weekend": 159
+        }        
+    }
+}

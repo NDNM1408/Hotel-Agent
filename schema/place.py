@@ -6,27 +6,27 @@ from enum import Enum
 class Utility(str, Enum):
     CINEMA = "Cinema"
     SCHOOL = "School"
-    DINNER = "Winery"
+    DINNER = "Dinner"
     BOARDROOM = "Boardroom"
     UTABLE = "U-Table"
     PARTY = "Party"
 
 class Place(BaseModel):
     place: t.Optional[str] = Field(
-        ...,
-        "The place that guests rent in their trip"
+        None,
+        description="The place that guests rent in their trip"
     )
     utilities: t.List[Utility] = Field(
         ...,
-        "The list of uilities that guests rent in their trip"
+        description="The list of utilities that guests rent in their trip"
     )
     full_day: bool = Field(
         ...,
-        "Whether guests hire the place full day or not, basing on the time they hire"
+        description="Whether guests hire the place full day or not, based on the time they hire"
     )
 
 class RentPlaces(BaseModel):
     rent_utilities: t.List[Place] = Field(
         ...,
-        "The list of of utilities that customer renting basing on the description"
+        description="The list of utilities that customers rent based on the description"
     )

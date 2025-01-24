@@ -3,10 +3,10 @@ import typing as t
 from enum import Enum
 
 class DiscountType(str, Enum):
-    CHILD_UNDER_6 = "children under 6 years of age"
-    CHILD_6_TO_12 = "children from 6 to 12 years of age"
-    TRAVEL_COMPANY = "organized through a travel company"
-    STAFF_RELATIVE = "relatives of hotel staff members"
+    CHILD_UNDER_6 = "children under 6 years of age" # 50%
+    CHILD_6_TO_12 = "children from 6 to 12 years of age" # 15%
+    TRAVEL_COMPANY = "organized through a travel company" # 10%
+    STAFF_RELATIVE = "relatives of hotel staff members" # 15%
 
 class RoomType(str, Enum):
     SINGLE = "Single"
